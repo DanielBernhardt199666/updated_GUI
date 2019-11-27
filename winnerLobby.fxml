@@ -69,12 +69,12 @@
             <Font name="Agency FB Bold" size="48.0" />
          </font>
       </Label>
-      <Button fx:id="EXITbutton" layoutX="240.0" layoutY="705.0" mnemonicParsing="false" onAction="#disconnect" prefHeight="96.0" prefWidth="394.0" text="Fortsätt">
+      <Button fx:id="EXITbutton" blendMode="OVERLAY" layoutX="229.0" layoutY="705.0" mnemonicParsing="false" onAction="#disconnect" prefHeight="96.0" prefWidth="394.0" text="Fortsätt">
          <font>
             <Font name="Agency FB Bold" size="39.0" />
          </font>
          <effect>
-            <InnerShadow />
+            <InnerShadow choke="0.08" color="#0c837b" height="50.65" radius="32.2375" width="80.3" />
          </effect>
       </Button>
       <Line endX="730.5" layoutX="107.0" layoutY="334.0" opacity="0.4" startX="-107.0" />
@@ -146,7 +146,7 @@
             <Reflection />
          </effect>
       </ProgressBar>
-      <Label alignment="CENTER" layoutX="371.0" layoutY="362.0" prefHeight="37.0" prefWidth="122.0" text="Runda 1">
+      <Label alignment="CENTER" layoutX="365.0" layoutY="362.0" prefHeight="37.0" prefWidth="122.0" text="Runda 1">
          <font>
             <Font name="Monospaced Bold" size="17.0" />
          </font>
@@ -154,7 +154,7 @@
             <Glow />
          </effect>
       </Label>
-      <Label alignment="CENTER" layoutX="393.0" layoutY="631.0" prefHeight="37.0" prefWidth="88.0" text="Runda 4">
+      <Label alignment="CENTER" layoutX="382.0" layoutY="631.0" prefHeight="37.0" prefWidth="88.0" text="Runda 4">
          <font>
             <Font name="Monospaced Bold" size="17.0" />
          </font>
@@ -162,7 +162,7 @@
             <Glow />
          </effect>
       </Label>
-      <Label alignment="CENTER" layoutX="393.0" layoutY="547.0" prefHeight="37.0" prefWidth="88.0" text="Runda 3">
+      <Label alignment="CENTER" layoutX="382.0" layoutY="547.0" prefHeight="37.0" prefWidth="88.0" text="Runda 3">
          <font>
             <Font name="Monospaced Bold" size="17.0" />
          </font>
@@ -170,7 +170,7 @@
             <Glow />
          </effect>
       </Label>
-      <Label alignment="CENTER" layoutX="387.0" layoutY="451.0" prefHeight="37.0" prefWidth="88.0" text="Runda 2">
+      <Label alignment="CENTER" layoutX="382.0" layoutY="451.0" prefHeight="37.0" prefWidth="88.0" text="Runda 2">
          <font>
             <Font name="Monospaced Bold" size="17.0" />
          </font>
