@@ -72,6 +72,9 @@ public class Controller implements Initializable {
     private Label questionsPerRoundLabel;
 
     @FXML
+    private Label waitingforPlayerlabel;
+
+    @FXML
     private Label roundsLabel;
 
     @FXML
@@ -232,8 +235,15 @@ public class Controller implements Initializable {
 
     @FXML
     void ConnectToServer(ActionEvent event) throws InterruptedException {
+
+        if (username.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Please write username");
+            return;
+        }
+
         label.setVisible(true);
         progress.setVisible(true);
+        waitingforPlayerlabel.setVisible(true);
         label.setText("Connected as " + username.getText());
 
 
