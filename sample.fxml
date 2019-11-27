@@ -63,10 +63,13 @@
                 <effect>
                     <InnerShadow />
                 </effect></Button>
-            <TextArea fx:id="howtoPlayTextARea" blendMode="SCREEN" editable="false" layoutX="6.0" layoutY="166.0" mouseTransparent="true" prefHeight="129.0" prefWidth="340.0" promptText="RULES:" text="1v1 match.&#10;Amount of questions:&#10;Max points:&#10;Ingame chat.&#10;" visible="false">
+            <TextArea fx:id="howtoPlayTextARea" blendMode="COLOR_BURN" editable="false" layoutX="6.0" layoutY="172.0" mouseTransparent="true" prefHeight="129.0" prefWidth="340.0" promptText="RULES:" text="Frågesport!&#10;&#10;Möjlighet att spela 1vs1 eller vs flera!&#10;&#10;GL :)" visible="false" wrapText="true">
                 <font>
                     <Font name="Arial Bold Italic" size="16.0" />
                 </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </TextArea>
             <Label layoutX="6.0" layoutY="332.0" prefHeight="48.0" prefWidth="269.0" text="Enter username below:" textFill="WHITE">
                 <font>
@@ -99,7 +102,7 @@
                     <Cursor fx:constant="OPEN_HAND" />
                 </cursor>
             </Button>
-            <ProgressIndicator fx:id="progress" layoutX="150.0" layoutY="661.0" prefHeight="54.0" prefWidth="84.0" visible="false">
+            <ProgressIndicator fx:id="progress" layoutX="131.0" layoutY="666.0" prefHeight="53.0" prefWidth="58.0" visible="false">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets>
@@ -121,9 +124,9 @@
                     <Cursor fx:constant="OPEN_HAND" />
                 </cursor>
             </Button>
-            <Label fx:id="waitingforPlayerlabel" alignment="CENTER" layoutX="184.0" layoutY="661.0" prefHeight="53.0" prefWidth="416.0" text="Waiting for other player" textAlignment="JUSTIFY" textFill="WHITE" visible="false" wrapText="true">
+            <Label fx:id="waitingforPlayerlabel" alignment="CENTER" layoutX="157.0" layoutY="652.0" prefHeight="80.0" prefWidth="489.0" text="Waiting for other player" textAlignment="JUSTIFY" textFill="WHITE" visible="false" wrapText="true">
                 <font>
-                    <Font name="Monospaced Bold" size="19.0" />
+                    <Font name="Monospaced Bold" size="28.0" />
                 </font>
                 <effect>
                     <Glow />
