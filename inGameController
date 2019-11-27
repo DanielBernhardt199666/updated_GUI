@@ -73,6 +73,8 @@ public class IngameController extends Controller implements Initializable {
     private TextField msgTextField;
 
 
+
+
     @FXML
     void continuetoWinninglobby(ActionEvent event) throws Exception{
         Parent tableViewParent = FXMLLoader.load(getClass().getResource("WinnerLobby.fxml"));
@@ -116,20 +118,50 @@ public class IngameController extends Controller implements Initializable {
     void sendMsg(ActionEvent event) {
 
     }
+
     @FXML
-    void openchatWindow(ActionEvent event) {
+    void show() {
         chatwindowTextArea.setVisible(true);
         sendmsgButton.setVisible(true);
         msgTextField.setVisible(true);
+    }
+    @FXML
+    void hide(){
+        chatwindowTextArea.setVisible(false);
+        sendmsgButton.setVisible(false);
+        msgTextField.setVisible(false);
+    }
+    @FXML
+    void openchatWindow(ActionEvent event) {
 
-        chatWindowButton.setText("Close");
+            if (chatWindowButton.getText().equalsIgnoreCase("chatWindow")) {
+                show();
+                chatWindowButton.setText("Close");
+            }else if (chatWindowButton.getText().equalsIgnoreCase("Close")){
+                hide();
+                chatWindowButton.setText("ChatWindow");
+            }
 
-        if (chatWindowButton.getText().equalsIgnoreCase("Close")){
+        }
+        /*chatWindowButton.setText("Close");
+
+        chatWindowButton.addEventHandler(ActionEvent.ACTION, e -> {
             chatwindowTextArea.setVisible(false);
             sendmsgButton.setVisible(false);
             msgTextField.setVisible(false);
-        }
-    }
+
+            chatWindowButton.setText("ChatWindow");
+        });
+*/
+        /*if (chatWindowButton.getText().equalsIgnoreCase("Close")){
+            chatwindowTextArea.setVisible(false);
+            sendmsgButton.setVisible(false);
+            msgTextField.setVisible(false);
+
+            chatWindowButton.setText("ChatWindow");
+
+        } */
+
 
 
     @Override
