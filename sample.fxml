@@ -8,6 +8,7 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Reflection?>
@@ -45,7 +46,7 @@
                   <Blend />
                </effect>
                 </Text>
-            <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="625.0" prefHeight="90.0" prefWidth="800.0" textAlignment="CENTER" textFill="WHITE" underline="true" visible="false">
+            <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutY="495.0" prefHeight="90.0" prefWidth="800.0" textAlignment="CENTER" textFill="WHITE" underline="true" visible="false" wrapText="true">
                <font>
                   <Font name="Monospaced Bold" size="29.0" />
                </font>
@@ -92,7 +93,7 @@
                   <InnerShadow />
                </effect>
             </Button>
-            <ProgressIndicator fx:id="progress" layoutX="175.0" layoutY="644.0" visible="false">
+            <ProgressIndicator fx:id="progress" layoutX="150.0" layoutY="661.0" prefHeight="54.0" prefWidth="84.0" visible="false">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -111,26 +112,14 @@
                   <InnerShadow color="#0a0a0a" />
                </effect>
             </Button>
-            <TextField fx:id="rounds" blendMode="HARD_LIGHT" layoutX="550.0" layoutY="172.0" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: #7FDBFF;" visible="false">
-               <effect>
-                  <InnerShadow />
-               </effect>
-            </TextField>
-            <Label fx:id="roundsLabel" alignment="CENTER_RIGHT" layoutX="475.0" layoutY="175.0" prefHeight="19.0" prefWidth="73.0" text="Rounds:" visible="false">
+            <Label fx:id="waitingforPlayerlabel" alignment="CENTER" layoutX="184.0" layoutY="661.0" prefHeight="53.0" prefWidth="416.0" text="Waiting for other player" textAlignment="JUSTIFY" textFill="WHITE" visible="false" wrapText="true">
                <font>
-                  <Font name="Monospaced Regular" size="16.0" />
+                  <Font name="Monospaced Bold" size="19.0" />
                </font>
-            </Label>
-            <Label fx:id="questionsPerRoundLabel" alignment="CENTER_RIGHT" layoutX="389.0" layoutY="200.0" prefHeight="25.0" prefWidth="152.0" text="Questions per round:" visible="false">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <TextField fx:id="questionsPerRound" blendMode="HARD_LIGHT" layoutX="550.0" layoutY="197.0" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: #7FDBFF;" visible="false">
                <effect>
-                  <InnerShadow />
+                  <Glow />
                </effect>
-            </TextField>
+            </Label>
             </children>
             <effect>
             <Blend />
